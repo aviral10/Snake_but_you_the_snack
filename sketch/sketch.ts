@@ -246,7 +246,7 @@ function gameOver(x:number):void{
     if(x == 0)
         alert(`${swears[floor(randomRange(0, swears.length))]}\nYour Score: ${SCORE}`);
     else 
-        alert(`Yayy you WON!![He can't warp through borders] Damn! that snake is stupid huh..\nYour Score: ${SCORE}`);
+        alert(`Yayy you WON!! He can't warp through borders stupid snake huh..\nYour Score: ${SCORE}`);
     reset();
 }
 // Handy funtion to update HTML elements
