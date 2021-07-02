@@ -87,8 +87,11 @@ function draw(): void{
         pop()
     }
 
-    if(larry.body.length >= grid.length*grid[0].length){
+    if(larry.body.length >= grid.length*grid[0].length - BLOCKS.length-1){
         noLoop();
+        alert("You Won, Board is full");
+        reset();
+        return;
     }
     for(let ele of BLOCKS){
         push()
